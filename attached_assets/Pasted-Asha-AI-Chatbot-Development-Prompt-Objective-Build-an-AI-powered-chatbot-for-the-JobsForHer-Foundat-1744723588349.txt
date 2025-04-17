@@ -1,0 +1,140 @@
+Asha AI Chatbot Development Prompt
+Objective:
+Build an AI-powered chatbot for the JobsForHer Foundation platform that provides real-time, inclusive, and ethical career assistance. The chatbot should empower women by guiding them through career opportunities, mentorship programs, networking events, and career resources. It must support multiple-turn conversations, integrate with public APIs for job listings and events, and ensure inclusivity and ethical AI principles.
+
+Key Features to Implement:
+Contextual Awareness:
+
+Multi-Turn Conversations: Handle long, engaging dialogues by maintaining context across multiple interactions.
+
+Session Memory: Use short-term memory to provide coherent and relevant responses, while ensuring data privacy (non-personalized).
+
+System Integration:
+
+Public APIs Integration: Fetch real-time data from external APIs for:
+
+Job Listings (e.g., Indeed, Glassdoor)
+
+Mentorship Programs
+
+Events (Workshops, Seminars)
+
+CSV/JSON Files as Fallbacks: In case APIs are unavailable, use pre-loaded structured datasets like job_listing_data.csv and session_details.json.
+
+Ethical AI & Bias Prevention:
+
+Bias Detection: Detect and redirect gender-biased queries (e.g., ask about jobs in specific gender roles) using NLP models.
+
+Inclusive Responses: Ensure that all responses promote gender equality, empowerment, and inclusivity.
+
+Security & Privacy:
+
+Data Encryption: Implement end-to-end encryption to secure sensitive data.
+
+GDPR Compliance: Ensure compliance with privacy standards (e.g., anonymizing data, securing sessions).
+
+User Data Protection: Ensure that no personal data is stored without consent.
+
+Real-Time Knowledge Updates:
+
+Dynamic Content Retrieval: Implement a retrieval-augmented generation (RAG) pipeline to fetch and return up-to-date information.
+
+Semantic Search: Use technologies like FAISS or Pinecone for advanced semantic search capabilities.
+
+Performance & Monitoring:
+
+Analytics Dashboard: Track user interactions, satisfaction scores, response accuracy, and bias detection effectiveness.
+
+Continuous Improvement: Enable feedback loops for users to report inaccuracies or bias in responses. Refine AI models based on real-world interactions.
+
+Error Handling & Fallback Mechanisms:
+
+Graceful Degradation: Provide fallback options (e.g., redirect to curated content or human support) when the chatbot cannot process a request.
+
+User Feedback: Allow users to submit feedback on responses, particularly for identifying inaccuracies or biased responses.
+
+Technical Framework:
+Frontend:
+
+React.js for dynamic UI
+
+Tailwind CSS for responsive, modern design
+
+Support for light/dark mode
+
+Backend:
+
+FastAPI (Python) for handling API requests and serving dynamic content.
+
+LangChain or Haystack for RAG-based knowledge retrieval.
+
+Use OpenAI API or LLaMA2 for NLP and response generation.
+
+Use FAISS or Pinecone for storing and querying vector embeddings.
+
+APIs & Data Sources:
+
+Public APIs: For live job listings, events, mentorship opportunities.
+
+Pre-loaded Datasets: CSV/JSON files for fallback data.
+
+Security & Privacy:
+
+Implement SSL/TLS encryption for secure communication.
+
+Adhere to GDPR guidelines for data handling and privacy.
+
+Next Steps for Development:
+UI Development:
+
+Build the chatbot interface with React and integrate Tailwind CSS.
+
+Design chat UI with conversation history, input box, and response display.
+
+Backend API Integration:
+
+Develop backend endpoints in FastAPI to fetch job listings, event details, and mentorship data.
+
+Implement API calls to external job boards and mentorship platforms.
+
+RAG Pipeline Implementation:
+
+Set up the RAG system using LangChain or Haystack.
+
+Use FAISS or Pinecone to store job listings, event data, and other relevant content.
+
+Bias Detection & NLP:
+
+Implement NLP models for detecting gender bias in user inputs.
+
+Redirect biased queries to neutral responses or relevant content.
+
+Security Layer:
+
+Implement data encryption and ensure secure data handling practices.
+
+Set up GDPR-compliant mechanisms for storing and processing user data.
+
+Performance Monitoring:
+
+Set up tracking for user interactions, satisfaction scores, and response accuracy.
+
+Implement continuous learning mechanisms to improve the chatbot's responses.
+
+Testing & Deployment:
+
+Test all features for accuracy, bias detection, and security.
+
+Deploy the chatbot using Streamlit, Vercel, or Render for the frontend and backend.
+
+Evaluation Criteria:
+Query Success Rate – ≥90%
+
+Bias Detection Accuracy – ≥95%
+
+User Satisfaction Score – ≥4.2/5
+
+Response Time – ≤3 seconds
+
+Feedback Integration – Every 2 weeks
+
